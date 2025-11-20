@@ -35,5 +35,19 @@
 
 /* Icon buttons */
 .iconButton {
-  @apply flex items-center gap-2 p-2 rounded-xl bg-white shadow hover:shadow-md transition;
+  @apply flex items-center gap-2 p-2 rounded-xl bg-white shadow hover:shadow-md transition cursor-pointer;
+}
+
+/* Tooltip for copied email */
+.copiedTooltip {
+  @apply absolute -top-6 left-1/2 transform -translate-x-1/2 px-2 py-1 text-xs bg-gray-800 text-white rounded shadow;
+  animation: fade 2s ease forwards;
+}
+
+/* Fade animation for tooltip */
+@keyframes fade {
+  0% { opacity: 0; transform: translateY(-5px); }
+  10% { opacity: 1; transform: translateY(-10px); }
+  90% { opacity: 1; transform: translateY(-10px); }
+  100% { opacity: 0; transform: translateY(-15px); }
 }

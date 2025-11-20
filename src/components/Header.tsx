@@ -1,8 +1,16 @@
-import { Github, Mail } from "lucide-react";
+import { useState } from "react";
+import { Github, Mail, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import styles from "../styles/Header.module.css";
 
 export default function Header() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("jeremym3817@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // hide after 2 seconds
+  };
   return (
     <header className={styles.header}>
       {/* HERO SECTION */}
@@ -17,7 +25,7 @@ export default function Header() {
           transition={{ duration: 0.8 }}
         />
 
-        {/* Bio + Name */}
+        {/* Bio + Buttons */}
         <motion.div
           className={styles.bio}
           initial={{ opacity: 0, x: 50 }}
@@ -31,7 +39,7 @@ export default function Header() {
 
           <div className={styles.links}>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/jeremym3817"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.iconButton}
@@ -39,9 +47,28 @@ export default function Header() {
               <Github size={18} /> GitHub
             </a>
 
-            <a href="mailto:your.email@example.com" className={styles.iconButton}>
-              <Mail size={18} /> Email
+            <a
+              href="https://www.linkedin.com/in/jeremygmarino/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.iconButton}
+            >
+              <Linkedin size={18} /> LinkedIn
             </a>
+
+            {/* Email button with clipboard */}
+            <div className="relative inline-block">
+              <button
+                onClick={handleCopyEmail}
+                className={styles.iconButton}
+              >
+                <Mail size={18} /> Email
+              </button>
+
+              {copied && (
+                <span className={styles.copiedTooltip}>Copied!</span>
+              )}
+            </div>
           </div>
         </motion.div>
       </div>
