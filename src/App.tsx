@@ -8,7 +8,6 @@ export default function App() {
   return (
     <div className={layout.page}>
       <Header />
-
       <main className={layout.main}>
         {projects.map((p, i) => (
           <ProjectCard key={i} project={p} index={i} />
