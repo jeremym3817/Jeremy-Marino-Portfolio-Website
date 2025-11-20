@@ -1,0 +1,7 @@
+.page {
+  @apply min-h-screen bg-gray-50 text-gray-900 p-8 font-sans;
+}
+
+.main {
+  @apply max-w-5xl mx-auto flex flex-col gap-32;
+}
