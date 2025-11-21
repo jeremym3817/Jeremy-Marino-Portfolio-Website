@@ -21,7 +21,7 @@ export default function ProjectCard({ project, index }: Props) {
         ) : (
             <>
             <ProjectText project={project} index={index} />
-            <ProjectImage project={project} index={index} />
+            <Slideshow images={project.images} />
             </>
         )}
     </section>
