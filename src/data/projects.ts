@@ -1,9 +1,10 @@
 export interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  link: string;
-  screenshot?: string;
+    title: string;
+    description: string;
+    tech: string[];
+    link: string;
+    screenshot?: string;
+    images: string[];
 }
 
 const projects: Project[] = [
@@ -14,6 +15,11 @@ const projects: Project[] = [
     tech: ["Python", "NumPy", "Pandas", "SciPy"],
     link: "https://github.com/yourusername/life-expectancy-ml",
     screenshot: "/screenshots/life-expectancy.png",
+    images: [
+        "./screenshots/Marino_Jeremy.jpg",
+        "./screenshots/WIN_20250508_14_29_35_Pro.jpg",
+        "./screenshots/Marino_Jeremy.jpg",
+    ]
   },
   {
     title: "Web Scraper + Dashboard",
@@ -22,6 +28,11 @@ const projects: Project[] = [
     tech: ["Python", "FastAPI", "React", "Docker"],
     link: "https://github.com/yourusername/web-scraper",
     screenshot: "/screenshots/web-scraper.png",
+    images: [
+        "./screenshots/Marino_Jeremy.jpg",
+        "./screenshots/WIN_20250508_14_29_35_Pro.jpg",
+        "./screenshots/Marino_Jeremy.jpg",
+    ]
   },
   {
     title: "TikTok Trend Analyzer",
@@ -30,6 +41,11 @@ const projects: Project[] = [
     tech: ["Python", "sklearn", "TypeScript", "Node.js"],
     link: "https://github.com/yourusername/tiktok-trends",
     screenshot: "/screenshots/tiktok-trends.png",
+    images: [
+        "./screenshots/Marino_Jeremy.jpg",
+        "./screenshots/WIN_20250508_14_29_35_Pro.jpg",
+        "./screenshots/Marino_Jeremy.jpg",
+    ]
   },
 ];
 

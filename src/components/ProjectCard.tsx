@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { Project } from "../data/projects";
 import styles from "../styles/ProjectCard.module.css";
+import Slideshow from "./Slideshow";
 
 interface Props {
   project: Project;
@@ -11,9 +12,10 @@ interface Props {
 export default function ProjectCard({ project, index }: Props) {
   return (
     <section className={styles.project}>
+
         {index % 2 === 0 ? (
             <>
-            <ProjectImage project={project} index={index} />
+            <Slideshow images={project.images} />
             <ProjectText project={project} index={index} />
             </>
         ) : (
