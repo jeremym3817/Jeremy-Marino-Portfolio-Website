@@ -3,5 +3,5 @@
 }
 
 .main {
-  @apply max-w-5xl mx-auto flex flex-col gap-32 p-8;
+  @apply max-w-7xl mx-auto flex flex-col gap-32 p-8;
 }

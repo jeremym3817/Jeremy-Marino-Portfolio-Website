@@ -22,12 +22,15 @@ export default function Slideshow({ images }: Props) {
           <ChevronLeft />
         </button>
 
+      <div className={styles.slideFrame}>
         <img
           src={images[index]}
           alt="project screenshot"
           className={styles.image}
           onClick={() => setIsOpen(true)}
         />
+      </div>
+
 
         <button className={styles.arrow} onClick={next}>
           <ChevronRight />
