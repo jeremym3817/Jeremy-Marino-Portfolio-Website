@@ -59,7 +59,7 @@ const projects: Project[] = [
     link: "https://github.com/jeremym3817/Basketball-Computer-Vision-",
     screenshot: "public/screenshots/yolo_basketball_1.gif",
     images: [
-        "public/screenshots/yolo_basketball_1.gif"
+        `public/screenshots/yolo_basketball_1.gif`
     ]
   },
   {

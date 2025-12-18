@@ -17,7 +17,7 @@ export default function Header() {
       <div className={styles.hero}>
         {/* Profile Picture */}
         <motion.img
-          src="public/screenshots/Marino_Jeremy.jpg" 
+          src="public/screenshots/Marino_Jeremy.png" 
           alt="Jeremy Marino"
           className={styles.profilePic}
           initial={{ opacity: 0, x: -50 }}
