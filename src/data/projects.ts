@@ -9,16 +9,17 @@ export interface Project {
 
 const projects: Project[] = [
   {
-    title: "Machine Learning Life Expectancy Model",
+    title: "Northeastern Facility Tracker App",
     description:
-      "Built a regression model with LASSO regularization, PCA, and gradient descent to predict life expectancy.",
-    tech: ["Python", "NumPy", "Pandas", "SciPy"],
-    link: "https://github.com/yourusername/life-expectancy-ml",
+      "A web application that tracks and displays historical gym facility traffic locations on Northeastern's campus. \
+      Cleaned and processed data with Python and used JavaScript/HTML/CSS for cilent side display. \
+      Currently working on hosting the web scraper using a Raspberry Pi for future data collection and analysis.",
+    tech: ["Python", "JavaScript/HTML/CSS", "SQLite", "Web Scraping"],
+    link: "https://github.com/jeremym3817/Northeastern-Marino-Squash-Buster-Status-Web-App",
     screenshot: "/screenshots/life-expectancy.png",
     images: [
-        "./screenshots/Marino_Jeremy.jpg",
-        "./screenshots/WIN_20250508_14_29_35_Pro.jpg",
-        "./screenshots/Marino_Jeremy.jpg",
+        "./screenshots/Screenshot 2025-12-18 164000.png",
+        "./screenshots/Screenshot 2025-12-18 164024.png"
     ]
   },
   {
@@ -62,11 +63,12 @@ const projects: Project[] = [
     ]
   },
   {
-    title: "Community Service Volunteer Application Portal",
+    title: "Community Service Application Portal",
     description:
-      "Built a regression model with LASSO regularization, PCA, and gradient descent to predict life expectancy.",
-    tech: ["Python", "NumPy", "Pandas", "SciPy"],
-    link: "https://github.com/yourusername/life-expectancy-ml",
+      "Application portal for volunteer program that reads, filters, manipulates, and displays applicant data. \
+      Built with Streamlit for easy deployment and interaction to simplify volunteer matching process.",
+    tech: ["Python", "Excel", "Jupyter", "Streamlit"],
+    link: "https://github.com/jeremym3817/Community-Service-Application-Portal",
     screenshot: "/screenshots/life-expectancy.png",
     images: [
         "./screenshots/CVP_APP_SS.png",
