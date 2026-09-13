@@ -9,6 +9,31 @@ export interface Project {
 
 const projects: Project[] = [
   {
+    title: "Batting and Pitching Metric’s Evolution in College Baseball",
+    description:
+      "Quantitative research paper attempting to uncover the change of pitching/batting trends at three levels of collegiate baseball compared to the pros. \
+      Analysis uses time series and Bayesian models to predict statistic variance between divisions.",
+    tech: ["Python", "R", "Jupyter", "sklearn"],
+    link: "https://github.com/jeremym3817/DS4420-BiggsMarino-Final-Project",
+    screenshot: "/screenshots/BiggsMarino - Batting and Pitching Metric’s Evolution in College Baseball Poster-1.png",
+    images: [
+        "./screenshots/BiggsMarino - Batting and Pitching Metric’s Evolution in College Baseball Poster-1.png"
+    ]
+  },
+  {
+    title: "Screwworm Report Network",
+    description:
+      "Proposed research project using computer vision methodology \
+      to mitigate parasitic bug outbreaks for agricultural/biosurveillance applications. \
+      Project was part of a intern ideation competition at MIT Lincoln Laboratory.",
+    tech: ["Python", "YOLO Vision", "OpenCV"],
+    link: "",
+    screenshot: "screenshots/Screwworm Report Network - Final - Single Slide-V1-1.png",
+    images: [
+        "screenshots/Screwworm Report Network - Final - Single Slide-V1-1.png",
+    ]
+  },
+  {
     title: "Northeastern Facility Tracker App",
     description:
       "A web application that tracks and displays historical gym facility traffic locations on Northeastern's campus. \
@@ -57,7 +82,7 @@ const projects: Project[] = [
       A fun project I put together to gain a better understanding of Computer Vision.",
     tech: ["Python", "YOLO Vision", "OpenCV"],
     link: "https://github.com/jeremym3817/Basketball-Computer-Vision-",
-    screenshot: "public/screenshots/yolo_basketball_1.gif",
+    screenshot: "/screenshots/yolo_basketball_1.gif",
     images: [
         "./screenshots/yolo_basketball_1.gif"
     ]
